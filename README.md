@@ -1,5 +1,5 @@
 # Lamp Matrix PCB for PPUC Project
-This is the hardware for a LED lamp matrix card which was designed for the PPUC pinball project, but can be useful in other applications as well. The intentionally usecase is to connect a original equipped pinball playfield (including cable harness). Normally I'd prefer a serial WS2812 LED strip to do a DIY pinball but if all the LEDs an cables are in place already, it is useful to connect the lamp matix directly (for LED use only, not for incandescent bulbs as power of the outputs is limited).
+This is the hardware for a LED lamp matrix card which was designed for the PPUC pinball project, but can be useful in other applications as well. The intentionally usecase is to connect a original equipped pinball playfield (including cable harness). Normally I'd prefer a serial WS2812 LED strip to do a DIY pinball but if all the LEDs and cables are in place already, it is useful to connect the lamp matrix directly (for LED use only, not for incandescent bulbs as power of the outputs is limited).
 It is designed for being low cost and functional for experimental use.  
 Not everything is tested nor does it fulfill EMC or any other specifications.  
 Use at your own risk!

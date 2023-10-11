@@ -4,6 +4,12 @@
 
   (paper "A3")
 
+  (title_block
+    (title "Out_8x10")
+    (date "2023-10-08")
+    (rev "0.01")
+  )
+
   (lib_symbols
     (symbol "74xGxx:74AHC1G125" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at -2.54 3.81 0)
@@ -6015,10 +6021,10 @@
     (property "Reference" "C22" (id 0) (at 313.69 100.33 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1000µ 10V" (id 1) (at 309.88 102.87 0)
+    (property "Value" "100µ 35V" (id 1) (at 309.88 102.87 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" (id 2) (at 322.2752 104.14 0)
+    (property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7" (id 2) (at 322.2752 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 321.31 100.33 0)
@@ -6389,12 +6395,12 @@
   )
 
   (symbol (lib_id "Device:C") (at 109.22 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes)
     (uuid fcb78c0c-5c04-4805-bea3-c95c1fe80e78)
-    (property "Reference" "C4" (id 0) (at 113.03 101.5999 0)
+    (property "Reference" "C4" (id 0) (at 105.41 100.33 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10u" (id 1) (at 113.03 104.1399 0)
+    (property "Value" "10u" (id 1) (at 105.41 105.41 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 110.1852 106.68 0)
@@ -6537,6 +6543,9 @@
     )
     (path "/1a091826-22c9-49df-8e88-902569e1e684/d1d57856-3bf1-4c0d-a6ee-b74a4a059017"
       (reference "#G3") (unit 1) (value "LOGO") (footprint "")
+    )
+    (path "/c9a975b0-1246-4730-bd1c-268dfbd64e4d/0daeebf0-a4fb-4230-9f74-d7595247a400"
+      (reference "#PWR01") (unit 1) (value "GND") (footprint "")
     )
     (path "/35673b8a-3440-4c63-aade-4d916166039b"
       (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
@@ -6923,7 +6932,7 @@
       (reference "C21") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/c91e8187-5cdb-48c3-a93b-6176cb058619"
-      (reference "C22") (unit 1) (value "1000µ 10V") (footprint "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm")
+      (reference "C22") (unit 1) (value "100µ 35V") (footprint "Capacitor_SMD:CP_Elec_6.3x7.7")
     )
     (path "/5c24d363-7f11-462b-a0b1-6ba7cbda5c4e"
       (reference "C23") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0402_1005Metric")
@@ -6978,6 +6987,9 @@
     )
     (path "/c9a975b0-1246-4730-bd1c-268dfbd64e4d/8779c47b-7f0e-4062-87a0-33f34ef91755"
       (reference "C40") (unit 1) (value "1u 50V") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/c9a975b0-1246-4730-bd1c-268dfbd64e4d/a5fed3ff-44b4-4c21-b363-7f50b0b139b2"
+      (reference "C41") (unit 1) (value "100µ 35V") (footprint "Capacitor_SMD:CP_Elec_6.3x7.7")
     )
     (path "/120b1f37-0d67-4515-b71d-37957a82cacf"
       (reference "D1") (unit 1) (value "SD15") (footprint "Diode_SMD:D_SOD-323")
