@@ -1828,7 +1828,7 @@
     (property "Value" "Conn_01x12" (id 1) (at 241.3 126.9999 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_Molex:Molex_KK-396_5273-10A_1x10_P3.96mm_Vertical" (id 2) (at 238.76 124.46 0)
+    (property "Footprint" "Connector_Molex:Molex_KK-396_5273-12A_1x12_P3.96mm_Vertical" (id 2) (at 238.76 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 238.76 124.46 0)
