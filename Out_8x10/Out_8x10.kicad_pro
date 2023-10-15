@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -55,7 +55,9 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|106901001|77224001|42d0f6fc-f3cb-4dd5-87f9-7d42cd5eabbe|be7b2082-8eb4-41b4-9730-2ead6e6c7e27"
+      ],
       "meta": {
         "version": 2
       },
@@ -149,6 +151,7 @@
     "erc_exclusions": [
       "multiple_net_names|2908300|1079500|11b4209e-f614-4d26-a313-8b38aa77cda7|2886a1f8-abbc-49f7-84fb-0f4a6aa96ba1",
       "multiple_net_names|2908300|1079500|23c64a57-c9a2-4a7a-98b5-d4f7c4bfbd62|2886a1f8-abbc-49f7-84fb-0f4a6aa96ba1",
+      "multiple_net_names|2933700|939800|2611461d-d795-437e-a11b-97f4225cb10e|2886a1f8-abbc-49f7-84fb-0f4a6aa96ba1",
       "pin_not_connected|2006600|1168400|43632678-424e-41cb-a430-7e37a3cfa696|00000000-0000-0000-0000-000000000000",
       "pin_not_connected|2260600|1397000|a708dfa6-294d-4cee-8f53-33436e5a402b|00000000-0000-0000-0000-000000000000",
       "pin_not_connected|2336800|1270000|ce53e7da-799e-4ce0-b319-89a8e5113adb|00000000-0000-0000-0000-000000000000",

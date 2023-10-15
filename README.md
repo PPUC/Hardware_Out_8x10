@@ -33,6 +33,10 @@ There are 10 outputs featuring a low side switch, usually used für lamp rows. T
 ## Special Output
 One special output is available for high speed signals. The voltage is 5 V, it is a push pull output that can drive a current up to 8 mA. It can be used to e.g. control a WS2812 LED strip.
 
+## Connectors
+There are pads for connectors that fit S.A.M. systems and also WPC systems. Be aware that J5 (WPC columns) is actually not in the PCB layout as it can be mounted ont pins 1 to 9 of J6 (S.A.M. columns). The pinning is unfortunately vice versa so it looks as if the connector of the original WPC cable harness is 180° rotated (cables go to the inner side of PCB).
+
+
 
 
 
