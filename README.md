@@ -1,5 +1,5 @@
 # Lamp Matrix PCB for PPUC Project
-This is the hardware for a LED lamp matrix card which was designed for the PPUC pinball project, but can be useful in other applications as well. The intentionally usecase is to connect a original equipped pinball playfield (including cable harness). Normally I'd prefer a serial WS2812 LED strip to do a DIY pinball but if all the LEDs and cables are in place already, it is useful to connect the lamp matrix directly (for LED use only, not for incandescent bulbs as power of the outputs is limited).
+This is the hardware for a LED lamp matrix card which was designed for the PPUC pinball project, but can be useful in other applications as well. The intentionally usecase is to connect an original equipped pinball playfield (including cable harness). Normally I'd prefer a serial WS2812 LED strip to do a DIY pinball but if all the LEDs and cables are in place already, it is useful to connect the lamp matrix directly (for LED use only, not for incandescent bulbs as power of the outputs is limited).
 It is designed for being low cost and functional for experimental use.  
 Not everything is tested nor does it fulfill EMC or any other specifications.  
 Use at your own risk!
@@ -9,13 +9,13 @@ To make use of anything of this project a basic understanding of electronics and
 Out_8x10 as it has 18 outputs. 8 high side switches and 10 low side switches which can form a 8x10 matrix but could also be used as simple high side and low side outputs.  
 
 ## Power Supply
-The IO card must be supplied by 5 V (+-0.5 V) for logic and nominal 20 V for outputs. As these outputs are open source and open drain, the 20 V supply can actually be up to 26 V. In the circuit diagram the voltage is called 20 V.
+The IO card must be supplied by 5 V (+-0.5 V) for logic and nominal 20 V for outputs. As these outputs are open source and open drain, the 20 V supply can actually be 7 V up to 26 V. In the circuit diagram the voltage is called 20 V.
 
 ## Controller
 A RP2040 is used for it's cost/performance ratio. It is the same controller that is used in the Raspberry Pi Pico.
 
 ## Communication Interfaces
-* RS_485: main communication interface for controlling outputs and scan inputs. Usually connected to a host interface like a PC or Raspberry Pi or similar.
+* RS_485: main communication interface for controlling the outputs. Usually connected to a host interface like a PC or Raspberry Pi or similar.
 * USB C: for programming, debug and flashing
 * Serial Wire: alternative for programming, debug and flashing
 
@@ -25,16 +25,16 @@ A RP2040 is used for it's cost/performance ratio. It is the same controller that
 * DIP-switches: usually used to select an address for RS485 (16 combinations)
 
 ## High Side Switch Outputs
-There are 8 outputs featuring a high side switch, usually used for lamp coloums. The voltage is derived form 20 V power connection. Current and power is limited by a linear regulator (78L24) wich is actually not used for regulating the voltage but to protect the switch form overload in case of a short circuit. Each output can drive a constant current of 100 mA witch is normaly sufficiant for 10 LED lamps (e.g. 10 rows of LEDs). Short term peak current is about 300 mA. The 20 V supply can actually range from 7 V to 26 V.
+There are 8 outputs featuring a high side switch, usually used for lamp coloums. The voltage is derived form 20 V power connection. Current and power is limited by a linear regulator (78L24) wich is actually not used for regulating the voltage but to protect the switch form overload in case of a short circuit. Each output can drive a constant current of 100 mA witch is normaly sufficiant for 10 LED lamps (e.g. 10 rows of LEDs). Short term peak current is about 300 mA. The 20 V supply can actually range from 7 V to 26 V (the lower limit is derived from UGS of the high side FET).
 
 ## Low Side Switch Outputs
-There are 10 outputs featuring a low side switch, usually used für lamp rows. The outputs are open drain and drive currents up to 3 A with a load connected to a voltage of up to 30 V.
+There are 10 outputs featuring a low side switch, usually used for lamp rows. The outputs are open drain and drive currents up to 3 A with a load connected to a voltage of up to 30 V.
 
 ## Special Output
 One special output is available for high speed signals. The voltage is 5 V, it is a push pull output that can drive a current up to 8 mA. It can be used to e.g. control a WS2812 LED strip.
 
 ## Connectors
-There are pads for connectors that fit S.A.M. systems and also WPC systems. Be aware that J5 (WPC columns) is actually not in the PCB layout as it can be mounted ont pins 1 to 9 of J6 (S.A.M. columns). The pinning is unfortunately vice versa so it looks as if the connector of the original WPC cable harness is 180° rotated (cables go to the inner side of PCB).
+There are pads for connectors that fit S.A.M. systems and also WPC systems. Be aware that J5 (WPC columns) is actually not in the PCB layout as it can be mounted on pins 1 to 9 of J6 (S.A.M. columns). The pinning is unfortunately vice versa so the connector of the original WPC cable harness has to be rotated by 180° (cables go to the inner side of PCB).
 
 
 
