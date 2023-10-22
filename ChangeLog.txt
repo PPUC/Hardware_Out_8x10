@@ -1,3 +1,18 @@
+2023-10-22  foenich
+
+	Released Version 0.2.0
+	TP as RM2.54 terminal
+	
+	* changed 3 TPs to RM2.54 terminal
+	* changed versioning to x.y.z (major.functional change.bugfix)
+
+2023-10-20  foenich
+
+	Released Version 00.20
+	read DIP switch analog (SW compatible to IO_16_8_1)
+	
+	* added anlog circuit and changed wiring to uC
+
 2023-10-08  foenich
 
 	Released initial Version 0.10
