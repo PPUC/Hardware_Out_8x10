@@ -5,6 +5,9 @@ Not everything is tested nor does it fulfill EMC or any other specifications.
 Use at your own risk!
 To make use of anything of this project a basic understanding of electronics and programming is necessary. Nothing of it is "plug and play". I'm surely not liable for any damage to assemblies, pinball machines or even persons.
 
+## Picture of the Board
+![PCB Pic](Out_8x10/PCB_Out_8x10.jpg)
+
 ## Name
 Out_8x10 as it has 18 outputs. 8 high side switches and 10 low side switches which can form a 8x10 matrix but could also be used as simple high side and low side outputs.  
 
