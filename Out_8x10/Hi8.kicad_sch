@@ -5,9 +5,9 @@
   (paper "A4")
 
   (title_block
-    (title "High Side Switches")
-    (date "2023-10-08")
-    (rev "0.2.0")
+    (title "Out_8x10")
+    (date "2024-12-01")
+    (rev "1.0.0")
   )
 
   (lib_symbols
@@ -3473,6 +3473,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 33.02 175.26 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "JLCPCB Rotation Offset" "180" (id 4) (at 33.02 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7cdd17ae-980a-429d-9087-61a62ebbf9c3))

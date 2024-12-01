@@ -1,3 +1,17 @@
+2024-12-01  foenich
+
+	Released Version 1.0.0
+	Jumper for RS485 termination. Removed bias resistors.
+	Prevented current from USB to 5V_IN.
+	More terminals for A and B.
+	
+	* removed F1 (as +5V is no loger at a terminal)
+	* inserted D7
+	* changed J1, pin 4 from GND to A and pin 5 from GND to B
+	* inserted JP1
+	* removed R3 and R5
+	
+
 2023-10-22  foenich
 
 	Released Version 0.2.0

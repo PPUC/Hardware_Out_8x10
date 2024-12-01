@@ -5,9 +5,9 @@
   (paper "A4")
 
   (title_block
-    (title "Low Side Switches")
-    (date "2023-10-08")
-    (rev "0.2.0")
+    (title "Out_8x10")
+    (date "2024-12-01")
+    (rev "1.0.0")
   )
 
   (lib_symbols
